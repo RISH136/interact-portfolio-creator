@@ -1,14 +1,14 @@
 
 import React from 'react';
 import { Button } from '@/components/ui/button';
+import { ArrowRight } from 'lucide-react';
 
 const HeroSection = () => {
   return (
     <section 
       id="home" 
-      className="min-h-screen flex items-center bg-portfolio-dark-bg relative overflow-hidden pt-20"
+      className="min-h-screen flex items-center relative overflow-hidden pt-20"
     >
-      <div className="absolute inset-0 bg-[url('/stars-pattern.png')] opacity-30 z-0"></div>
       <div className="container mx-auto px-4 z-10">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
           <div className="text-white">
@@ -19,9 +19,9 @@ const HeroSection = () => {
               I'M <span className="text-[#9b87f5]">SOUMYAJIT BEHERA</span>
             </h1>
             <h2 className="text-2xl md:text-3xl font-medium text-gray-300 mb-6 animate-fade-in" style={{ animationDelay: '0.2s' }}>
-              Developer<span className="text-[#9b87f5]">|</span>
+              Full Stack Developer<span className="text-[#9b87f5]">|</span>Open Source Contributor
             </h2>
-            <p className="text-lg text-gray-300 mb-8 animate-fade-in" style={{ animationDelay: '0.3s' }}>
+            <p className="text-lg text-gray-300 mb-8 max-w-xl animate-fade-in" style={{ animationDelay: '0.3s' }}>
               I create exceptional web experiences and solve complex problems.
               I'm passionate about building software that improves lives and pushing
               the boundaries of what's possible with code.
@@ -32,15 +32,15 @@ const HeroSection = () => {
                 className="bg-[#9b87f5] hover:bg-[#7E69AB] text-white"
                 onClick={() => window.open('#projects', '_self')}
               >
-                View My Projects
+                View My Work
               </Button>
               <Button 
                 variant="outline" 
                 size="lg" 
-                className="border-[#9b87f5] text-[#9b87f5] hover:bg-[#9b87f5]/10"
+                className="border-[#9b87f5] text-[#9b87f5] hover:bg-[#9b87f5]/10 flex items-center gap-2"
                 onClick={() => window.open('/resume', '_self')}
               >
-                View Resume
+                Resume <ArrowRight size={16} />
               </Button>
             </div>
           </div>

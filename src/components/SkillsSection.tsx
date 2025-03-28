@@ -12,12 +12,12 @@ const SkillsSection = () => {
 
   const SkillCategory = ({ title, items }: { title: string; items: string[] }) => (
     <div className="mb-8">
-      <h3 className="text-xl font-semibold mb-4">{title}</h3>
+      <h3 className="text-xl font-semibold mb-4 text-white">{title}</h3>
       <div className="flex flex-wrap gap-2">
         {items.map((skill) => (
           <Badge 
             key={skill} 
-            className="skill-badge"
+            className="bg-[#9b87f5]/20 text-[#9b87f5] hover:bg-[#9b87f5]/30"
           >
             {skill}
           </Badge>
@@ -27,12 +27,12 @@ const SkillsSection = () => {
   );
 
   return (
-    <section id="skills" className="py-20 bg-gray-50">
+    <section id="skills" className="py-20 bg-portfolio-dark-bg">
       <div className="container mx-auto px-4">
-        <h2 className="section-heading">Skills & Technologies</h2>
+        <h2 className="section-heading text-white">Skills & Technologies</h2>
         
-        <div className="bg-white rounded-xl shadow-md p-8">
-          <p className="text-lg mb-8">
+        <div className="bg-[#1E2235] rounded-xl shadow-md p-8 border border-[#2A2F42]">
+          <p className="text-lg mb-8 text-gray-300">
             I've worked with a range of technologies in the web development world.
             From frontend to backend, I'm constantly expanding my skillset to stay
             current with industry standards.

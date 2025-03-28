@@ -11,7 +11,7 @@ import Footer from '@/components/Footer';
 
 const Index = () => {
   return (
-    <div className="min-h-screen bg-portfolio-dark-bg">
+    <div className="min-h-screen bg-portfolio-dark-bg bg-[url('/stars-pattern.png')] bg-repeat">
       <Navbar />
       <HeroSection />
       <AboutSection />
