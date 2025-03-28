@@ -19,56 +19,110 @@ type Project = {
 const projects: Project[] = [
   {
     id: 1,
-    title: "E-Commerce Platform",
-    description: "A full-featured e-commerce platform with product listings, cart functionality, user authentication, and payment processing.",
-    longDescription: "This comprehensive e-commerce platform offers a complete online shopping experience. Users can browse products, filter by categories, add items to cart, create accounts, and complete purchases with integrated payment processing. The admin dashboard allows for inventory management, order processing, and user account management.",
+    title: "AI-Powered Personal Assistant",
+    description: "A sophisticated personal assistant application using NLP and machine learning to help users manage their daily tasks and schedule.",
+    longDescription: "This AI assistant application uses advanced natural language processing and machine learning models to understand and respond to user requests. It features voice recognition, contextual understanding, and intelligent task management. The assistant can schedule appointments, set reminders, send messages, provide weather updates, and learn from user interactions to become more personalized over time.",
     imageSrc: "/placeholder.svg",
     demoLink: "https://example.com",
     repoLink: "https://github.com",
-    tags: ["React", "Node.js", "MongoDB", "Express", "Redux", "Stripe API"],
+    tags: ["React", "TensorFlow.js", "Node.js", "WebSpeech API", "TypeScript", "Redux"],
     features: [
-      "User authentication and account management",
-      "Product catalog with search and filter options",
-      "Shopping cart and checkout process",
-      "Payment processing with Stripe",
-      "Order history and tracking",
-      "Admin dashboard for inventory management"
+      "Voice and text interaction with natural language understanding",
+      "Contextual awareness and conversation memory",
+      "Calendar and task management with smart suggestions",
+      "Personalized responses based on user preferences",
+      "Cross-platform synchronization",
+      "Offline functionality with local processing"
     ]
   },
   {
     id: 2,
-    title: "Task Management App",
-    description: "A collaborative task management application with real-time updates, task assignment, and project tracking features.",
-    longDescription: "This task management application helps teams organize work efficiently. It features real-time collaboration, allowing team members to see updates instantly. Users can create projects, add tasks, assign them to team members, set deadlines, and track progress. The application includes notification systems and detailed analytics to help teams optimize their workflow.",
+    title: "Real-time Collaboration Platform",
+    description: "A comprehensive platform enabling teams to collaborate on documents, designs, and code in real-time with robust version control.",
+    longDescription: "This collaboration platform brings together document editing, design tools, and code collaboration in one seamless environment. Teams can work simultaneously on projects with real-time updates visible to all participants. The platform includes version control, branching options, commenting, and approval workflows. Advanced conflict resolution algorithms ensure smooth collaboration even with multiple concurrent edits.",
     imageSrc: "/placeholder.svg",
     demoLink: "https://example.com",
     repoLink: "https://github.com",
-    tags: ["React", "Firebase", "TypeScript", "Material UI", "Redux"],
+    tags: ["React", "WebSockets", "GraphQL", "MongoDB", "Redis", "Docker"],
     features: [
-      "Project creation and management",
-      "Task creation, assignment, and status tracking",
-      "Real-time updates and collaboration",
-      "Calendar view and deadline notifications",
-      "Team member management",
-      "Progress analytics and reporting"
+      "Real-time document, design, and code editing",
+      "Advanced version control with branching and merging",
+      "Commenting and annotation tools",
+      "Project management with task tracking",
+      "Customizable workspace layouts",
+      "Integration with popular development and design tools"
     ]
   },
   {
     id: 3,
-    title: "Social Media Dashboard",
-    description: "A comprehensive dashboard for social media managers to monitor metrics across multiple platforms and schedule content.",
-    longDescription: "This social media dashboard gives marketing professionals a unified interface for managing multiple social media accounts. It pulls data from various platforms' APIs to provide analytics on engagement, reach, and other key metrics. Users can schedule posts across platforms, monitor comments and messages, and generate comprehensive reports on campaign performance.",
+    title: "Blockchain-based Supply Chain Tracker",
+    description: "A transparent supply chain management system using blockchain technology to track products from origin to consumer.",
+    longDescription: "This supply chain tracking application leverages blockchain technology to create an immutable record of a product's journey from manufacturer to consumer. Each transaction and transfer of goods is recorded as a block in the chain, ensuring transparency and preventing fraud. The system includes QR code scanning, IoT device integration for automatic updates, and a consumer-facing portal where end users can verify the authenticity and journey of their purchases.",
     imageSrc: "/placeholder.svg",
     demoLink: "https://example.com",
     repoLink: "https://github.com",
-    tags: ["Next.js", "Chart.js", "TailwindCSS", "Node.js", "PostgreSQL", "Social APIs"],
+    tags: ["React", "Solidity", "Ethereum", "Node.js", "Express", "Web3.js"],
     features: [
-      "Multi-platform integration (Twitter, Facebook, Instagram, LinkedIn)",
-      "Analytics dashboard with customizable metrics",
-      "Content scheduling and publishing",
-      "Engagement monitoring and response management",
-      "Automated reporting",
-      "Team collaboration tools"
+      "Immutable blockchain record of product journeys",
+      "QR code and RFID integration for tracking",
+      "IoT device support for automated checkpoints",
+      "Manufacturer and supplier portals",
+      "Consumer verification interface",
+      "Analytics dashboard for supply chain optimization"
+    ]
+  },
+  {
+    id: 4,
+    title: "AR Interior Design Visualizer",
+    description: "An augmented reality application that allows users to visualize furniture and decor in their space before purchasing.",
+    longDescription: "This AR application helps users make confident interior design decisions by allowing them to place virtual furniture and decor items in their real-world space using their smartphone camera. Users can browse thousands of products from partnered retailers, adjust colors and materials in real-time, and see how items look in different lighting conditions. The app includes measurement tools to ensure proper sizing and a recommendation engine that suggests complementary pieces based on selected items.",
+    imageSrc: "/placeholder.svg",
+    demoLink: "https://example.com",
+    repoLink: "https://github.com",
+    tags: ["React Native", "ARKit", "ARCore", "Three.js", "WebXR", "Firebase"],
+    features: [
+      "Real-time furniture and decor visualization in AR",
+      "Accurate measurements and scaling",
+      "Product catalog with thousands of items",
+      "Material and color customization",
+      "Room scanning and layout detection",
+      "Design sharing and collaboration"
+    ]
+  },
+  {
+    id: 5,
+    title: "Health and Fitness Tracker",
+    description: "A comprehensive health platform integrating workout tracking, nutrition planning, and health metrics monitoring with AI-powered insights.",
+    longDescription: "This health and fitness application provides users with a holistic view of their wellbeing by tracking physical activity, nutrition, sleep, and other health metrics. The platform uses machine learning to analyze patterns and provide personalized recommendations for improvement. Features include workout planning with video guides, meal planning with nutritional analysis, integration with wearable devices, and social challenges to keep users motivated.",
+    imageSrc: "/placeholder.svg",
+    demoLink: "https://example.com",
+    repoLink: "https://github.com",
+    tags: ["React", "Node.js", "PostgreSQL", "TensorFlow", "WebRTC", "GraphQL"],
+    features: [
+      "Comprehensive activity and workout tracking",
+      "Nutrition logging with macro and micronutrient analysis",
+      "Sleep and recovery monitoring",
+      "Personalized AI-generated fitness recommendations",
+      "Wearable device integration",
+      "Community challenges and social motivation"
+    ]
+  },
+  {
+    id: 6,
+    title: "Financial Portfolio Manager",
+    description: "A sophisticated financial tool for tracking investments, analyzing performance, and optimizing portfolio allocation across multiple asset classes.",
+    longDescription: "This financial portfolio manager gives investors a comprehensive view of their financial assets across stocks, bonds, cryptocurrencies, real estate, and more. The application provides real-time data, historical performance tracking, and advanced analytics to help users make informed investment decisions. Features include portfolio rebalancing recommendations, tax optimization strategies, risk assessment tools, and scenario planning to simulate market conditions.",
+    imageSrc: "/placeholder.svg",
+    demoLink: "https://example.com",
+    repoLink: "https://github.com",
+    tags: ["React", "D3.js", "Node.js", "PostgreSQL", "Redis", "Financial APIs"],
+    features: [
+      "Multi-asset portfolio tracking and visualization",
+      "Real-time market data integration",
+      "Performance analytics and benchmarking",
+      "Tax optimization strategies",
+      "Risk assessment and scenario modeling",
+      "Customizable alerts and notifications"
     ]
   }
 ];
