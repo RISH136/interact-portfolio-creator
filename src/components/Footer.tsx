@@ -1,6 +1,7 @@
 
 import React from 'react';
 import { Heart, ArrowUp } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 const Footer = () => {
   const scrollToTop = () => {
@@ -11,12 +12,12 @@ const Footer = () => {
   };
 
   return (
-    <footer className="bg-gray-100 py-8">
+    <footer className="bg-gray-900 py-8 text-white border-t border-gray-800">
       <div className="container mx-auto px-4">
         <div className="flex flex-col md:flex-row justify-between items-center">
           <div className="mb-4 md:mb-0">
-            <p className="text-gray-600 flex items-center">
-              Built with <Heart className="h-4 w-4 text-portfolio-blue mx-2 fill-portfolio-blue" /> by John Doe &copy; {new Date().getFullYear()}
+            <p className="text-gray-400 flex items-center">
+              Built with <Heart className="h-4 w-4 text-[#9b87f5] mx-2 fill-[#9b87f5]" /> by Soumyajit Behera &copy; {new Date().getFullYear()}
             </p>
           </div>
           
@@ -24,31 +25,31 @@ const Footer = () => {
             <nav>
               <ul className="flex space-x-6">
                 <li>
-                  <a href="#home" className="text-gray-600 hover:text-portfolio-blue transition-colors">
+                  <Link to="/#home" className="text-gray-400 hover:text-[#9b87f5] transition-colors">
                     Home
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a href="#about" className="text-gray-600 hover:text-portfolio-blue transition-colors">
+                  <Link to="/#about" className="text-gray-400 hover:text-[#9b87f5] transition-colors">
                     About
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a href="#projects" className="text-gray-600 hover:text-portfolio-blue transition-colors">
+                  <Link to="/#projects" className="text-gray-400 hover:text-[#9b87f5] transition-colors">
                     Projects
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a href="#contact" className="text-gray-600 hover:text-portfolio-blue transition-colors">
-                    Contact
-                  </a>
+                  <Link to="/resume" className="text-gray-400 hover:text-[#9b87f5] transition-colors">
+                    Resume
+                  </Link>
                 </li>
               </ul>
             </nav>
             
             <button 
               onClick={scrollToTop}
-              className="bg-portfolio-blue text-white p-2 rounded-full hover:bg-portfolio-dark-blue transition-colors"
+              className="bg-[#9b87f5] text-white p-2 rounded-full hover:bg-[#7E69AB] transition-colors"
               aria-label="Scroll to top"
             >
               <ArrowUp className="h-5 w-5" />
