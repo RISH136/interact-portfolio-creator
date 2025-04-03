@@ -49,16 +49,14 @@ const ProblemSolvingSection = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {problemsSolved.map((platform, index) => (
             <Card key={index} className="overflow-hidden bg-[#1E2235] border border-[#2A2F42] text-white">
-              <CardHeader className="bg-[#2A2F42]">
-                <CardTitle className="flex items-center justify-between">
-                  <span className="flex items-center gap-2">
-                    <Brain className="text-[#9b87f5]" />
-                    {platform.platform} Stats
-                  </span>
-                  <Button variant="link" className="text-[#9b87f5] p-0" onClick={() => window.open(platform.profileUrl, '_blank')}>
-                    @{platform.profileId} <ExternalLink className="ml-1 h-4 w-4" />
-                  </Button>
+              <CardHeader className="bg-[#2A2F42] flex flex-row justify-between items-center">
+                <CardTitle className="flex items-center gap-2">
+                  <Brain className="text-[#9b87f5]" />
+                  {platform.platform} Stats
                 </CardTitle>
+                <Button variant="link" className="text-[#9b87f5] p-0" onClick={() => window.open(platform.profileUrl, '_blank')}>
+                  @{platform.profileId} <ExternalLink className="ml-1 h-4 w-4" />
+                </Button>
               </CardHeader>
               <CardContent className="p-6">
                 <div className="mb-6">

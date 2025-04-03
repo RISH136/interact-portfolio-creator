@@ -20,7 +20,7 @@ const ContactSection = () => {
   };
 
   return (
-    <section id="contact" className="py-20 bg-portfolio-dark-bg">
+    <section id="contact" className="py-20 bg-portfolio-dark-bg bg-[url('/stars-pattern.png')] bg-repeat">
       <div className="container mx-auto px-4">
         <h2 className="section-heading text-white">Get In Touch</h2>
         
@@ -98,8 +98,8 @@ const ContactSection = () => {
                   </div>
                   <div>
                     <h4 className="text-sm text-gray-400">Email</h4>
-                    <a href="mailto:john.doe@example.com" className="hover:text-[#9b87f5] transition-colors">
-                      john.doe@example.com
+                    <a href="mailto:rishabhdev2026@gmail.com" className="hover:text-[#9b87f5] transition-colors">
+                      rishabhdev2026@gmail.com
                     </a>
                   </div>
                 </div>
@@ -110,8 +110,8 @@ const ContactSection = () => {
                   </div>
                   <div>
                     <h4 className="text-sm text-gray-400">Phone</h4>
-                    <a href="tel:+1234567890" className="hover:text-[#9b87f5] transition-colors">
-                      (123) 456-7890
+                    <a href="tel:+919334471822" className="hover:text-[#9b87f5] transition-colors">
+                      +91-9334471822
                     </a>
                   </div>
                 </div>
@@ -122,7 +122,7 @@ const ContactSection = () => {
                   </div>
                   <div>
                     <h4 className="text-sm text-gray-400">Location</h4>
-                    <p>San Francisco, CA</p>
+                    <p>New Delhi, India</p>
                   </div>
                 </div>
               </div>
@@ -167,7 +167,7 @@ const ContactSection = () => {
               <Button 
                 variant="outline" 
                 className="border-white text-white hover:bg-white hover:text-[#9b87f5]"
-                onClick={() => window.open('mailto:john.doe@example.com')}
+                onClick={() => window.open('mailto:rishabhdev2026@gmail.com')}
               >
                 Contact Me
               </Button>
