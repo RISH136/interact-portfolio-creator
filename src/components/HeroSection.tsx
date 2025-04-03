@@ -16,10 +16,10 @@ const HeroSection = () => {
               Hi There! <span className="animate-float inline-block">👋</span>
             </h3>
             <h1 className="text-4xl md:text-6xl font-bold mb-4 animate-fade-in" style={{ animationDelay: '0.1s' }}>
-              I'M <span className="text-[#9b87f5]">SOUMYAJIT BEHERA</span>
+              I'M <span className="text-[#9b87f5]">RISHABH DEV</span>
             </h1>
             <h2 className="text-2xl md:text-3xl font-medium text-gray-300 mb-6 animate-fade-in" style={{ animationDelay: '0.2s' }}>
-              Full Stack Developer<span className="text-[#9b87f5]">|</span>Open Source Contributor
+              Full Stack Developer<span className="text-[#9b87f5]">|</span>Problem Solver
             </h2>
             <p className="text-lg text-gray-300 mb-8 max-w-xl animate-fade-in" style={{ animationDelay: '0.3s' }}>
               I create exceptional web experiences and solve complex problems.

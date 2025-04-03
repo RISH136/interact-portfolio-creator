@@ -2,11 +2,14 @@
 import React from 'react';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Progress } from '@/components/ui/progress';
-import { Check, Clock, Award, Brain } from 'lucide-react';
+import { Check, Clock, Award, Brain, ExternalLink } from 'lucide-react';
+import { Button } from '@/components/ui/button';
 
 const problemsSolved = [
   {
     platform: 'LeetCode',
+    profileId: 'RISHABH467',
+    profileUrl: 'https://leetcode.com/RISHABH467/',
     totalSolved: 350,
     easyCount: 120,
     easyTotal: 150,
@@ -15,20 +18,22 @@ const problemsSolved = [
     hardCount: 50,
     hardTotal: 100,
     streak: 45,
-    ranking: '98th percentile',
+    ranking: 'top 20% globally',
     badge: 'Platinum',
     strongAreas: ['Dynamic Programming', 'Graph Theory', 'Binary Search'],
   },
   {
     platform: 'GeeksforGeeks',
-    totalSolved: 420,
-    easyCount: 150,
-    easyTotal: 180,
-    mediumCount: 200,
-    mediumTotal: 300,
-    hardCount: 70,
-    hardTotal: 120,
-    streak: 60,
+    profileId: 'rishabhdemjsc',
+    profileUrl: 'https://auth.geeksforgeeks.org/user/rishabhdemjsc',
+    totalSolved: 100,
+    easyCount: 45,
+    easyTotal: 60,
+    mediumCount: 40,
+    mediumTotal: 80,
+    hardCount: 15,
+    hardTotal: 40,
+    streak: 30,
     ranking: '95th percentile',
     badge: 'Gold',
     strongAreas: ['Trees', 'Greedy Algorithms', 'Backtracking'],
@@ -37,7 +42,7 @@ const problemsSolved = [
 
 const ProblemSolvingSection = () => {
   return (
-    <section id="problem-solving" className="py-16 bg-portfolio-dark-bg">
+    <section id="problem-solving" className="py-16 bg-portfolio-dark-bg bg-[url('/stars-pattern.png')] bg-repeat">
       <div className="container mx-auto px-4">
         <h2 className="section-heading text-white text-center mb-12">Problem Solving Skills</h2>
         
@@ -45,9 +50,14 @@ const ProblemSolvingSection = () => {
           {problemsSolved.map((platform, index) => (
             <Card key={index} className="overflow-hidden bg-[#1E2235] border border-[#2A2F42] text-white">
               <CardHeader className="bg-[#2A2F42]">
-                <CardTitle className="flex items-center gap-2">
-                  <Brain className="text-[#9b87f5]" />
-                  {platform.platform} Stats
+                <CardTitle className="flex items-center justify-between">
+                  <span className="flex items-center gap-2">
+                    <Brain className="text-[#9b87f5]" />
+                    {platform.platform} Stats
+                  </span>
+                  <Button variant="link" className="text-[#9b87f5] p-0" onClick={() => window.open(platform.profileUrl, '_blank')}>
+                    @{platform.profileId} <ExternalLink className="ml-1 h-4 w-4" />
+                  </Button>
                 </CardTitle>
               </CardHeader>
               <CardContent className="p-6">

@@ -17,7 +17,7 @@ const Footer = () => {
         <div className="flex flex-col md:flex-row justify-between items-center">
           <div className="mb-4 md:mb-0">
             <p className="text-gray-400 flex items-center">
-              Built with <Heart className="h-4 w-4 text-[#9b87f5] mx-2 fill-[#9b87f5]" /> by Soumyajit Behera &copy; {new Date().getFullYear()}
+              Built with <Heart className="h-4 w-4 text-[#9b87f5] mx-2 fill-[#9b87f5]" /> by Rishabh Dev &copy; {new Date().getFullYear()}
             </p>
           </div>
           
