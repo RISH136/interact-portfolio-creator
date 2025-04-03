@@ -32,7 +32,7 @@ const Navbar = () => {
     >
       <div className="container mx-auto px-4 flex justify-between items-center">
         <Link to="/" className="text-2xl font-bold text-[#9b87f5]">
-          Sb<span className="text-white">.</span>
+          Rd<span className="text-white">.</span>
         </Link>
 
         {/* Desktop Menu */}
